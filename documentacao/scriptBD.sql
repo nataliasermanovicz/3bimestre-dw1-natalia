@@ -19,13 +19,13 @@ CREATE TABLE Pessoa (
     dataNascimentoPessoa DATE,
     EnderecoIdEndereco INT REFERENCES Endereco(idEndereco)
 );
-
+ 
 CREATE TABLE Cargo (
     idCargo SERIAL PRIMARY KEY,
     nomeCargo VARCHAR(45)
 );
 
-CREATE TABLE Funcionario (
+CREATE TABLE Funcionario ( 
     PessoaCpfPessoa VARCHAR(20) PRIMARY KEY REFERENCES Pessoa(cpfPessoa),
     salario DOUBLE PRECISION,
     CargosIdCargo INT REFERENCES Cargo(idCargo)

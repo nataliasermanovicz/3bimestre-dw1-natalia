@@ -107,6 +107,27 @@ app.use('/cliente', clienteRoutes);
 const pessoaRoutes = require('./routes/pessoaRoutes');
 app.use('/pessoa', pessoaRoutes);
 
+const funcionarioRoutes = require('./routes/funcionarioRoutes');
+app.use('/funcionario', funcionarioRoutes);
+
+const enderecoRoutes = require('./routes/enderecoRoutes');
+app.use('/endereco', enderecoRoutes);
+
+const produtoRoutes = require('./routes/produtoRoutes');
+app.use('/produto', produtoRoutes);
+
+const pedidoRoutes = require('./routes/pedidoRoutes');
+app.use('/pedido', pedidoRoutes);
+
+const PedidoHasProdutoRoutes = require('./routes/PedidoHasProdutoRoutes');
+app.use('/PedidoHasProduto', PedidoHasProdutoRoutes);
+
+const pagamentoRoutes = require('./routes/pagamentoRoutes');
+app.use('/pagamento', pagamentoRoutes);
+
+const FormaDePagamentoRoutes = require('./routes/FormaDePagamentoRoutes');
+app.use('/FormaDePagamento', FormaDePagamentoRoutes);
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Rota padrão
